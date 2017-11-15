@@ -43,7 +43,6 @@ cnpm install --save material-design-icons
 ```
 ### add following code to style.scss
 ```
-```
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
