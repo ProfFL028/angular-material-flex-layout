@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule, MatButtonModule, MatChipsModule, MatListModule, MatLineModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatChipsModule, MatListModule, MatGridListModule, MatLineModule, MatCardModule } from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -32,6 +32,8 @@ import { MatBasicComponent } from './mat-basic/mat-basic.component';
     MatProgressSpinnerModule,
     MatListModule,
     MatLineModule,
+    MatGridListModule,
+    MatCardModule,
     MatIconModule
   ],
   providers: [],
