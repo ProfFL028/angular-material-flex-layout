@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule, MatButtonModule, MatChipsModule, MatListModule, MatGridListModule, MatLineModule, MatCardModule } from '@angular/material';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatToolbarModule, MatButtonModule, MatChipsModule, MatListModule,
+  MatGridListModule, MatLineModule, MatCardModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgModule } from '@angular/core';
 
@@ -15,6 +16,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MatBasicComponent } from './mat-basic/mat-basic.component';
 import { DishDetailComponent } from './dish-detail/dish-detail.component';
 
+import { DishService } from './services/dish.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,7 @@ import { DishDetailComponent } from './dish-detail/dish-detail.component';
     MatCardModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [ DishService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
