@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule, MatButtonModule, MatChipsModule, MatListModule,
-  MatGridListModule, MatLineModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatCheckboxModule, MatInputModule } from '@angular/material';
+  MatGridListModule, MatLineModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatCheckboxModule,
+  MatInputModule, MatSlideToggleModule, MatOptionModule, MatSelectModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -27,7 +28,7 @@ import { PromotionService} from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 
 import {AppRoutingModule} from './app-routing/app-routing.module';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -61,8 +62,12 @@ import {FormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatCheckboxModule,
     MatInputModule,
+    MatSlideToggleModule,
+    MatOptionModule,
+    MatSelectModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ DishService, PromotionService, LeaderService ],
   entryComponents: [ LoginComponent ],
