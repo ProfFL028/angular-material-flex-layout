@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule, MatButtonModule, MatChipsModule, MatListModule,
-  MatGridListModule, MatLineModule, MatCardModule } from '@angular/material';
+  MatGridListModule, MatLineModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatCheckboxModule, MatInputModule } from '@angular/material';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -15,6 +15,7 @@ import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { MatBasicComponent } from './mat-basic/mat-basic.component';
 import { DishDetailComponent } from './dish-detail/dish-detail.component';
+import { LoginComponent } from './login/login.component';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,6 +27,7 @@ import { PromotionService} from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 
 import {AppRoutingModule} from './app-routing/app-routing.module';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -54,9 +57,15 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
     MatGridListModule,
     MatCardModule,
     MatIconModule,
-    AppRoutingModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatInputModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ DishService, PromotionService, LeaderService ],
+  entryComponents: [ LoginComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
