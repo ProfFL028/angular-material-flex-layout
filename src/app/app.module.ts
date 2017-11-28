@@ -29,6 +29,8 @@ import { LeaderService } from './services/leader.service';
 
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    DynamicFormComponent,
+    DynamicFormQuestionComponent
   ],
   imports: [
     BrowserModule,
